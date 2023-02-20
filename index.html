@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a6ed251880.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Prueba 2</title>
+</head>
+<body>
+    <div class="padre">
+        <header class="header">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"><img src="media/images/logo.jpeg" width="130px" alt=""></a>
+                </div>
+                <div class="nav">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#contacto">Contacto</a>
+                    
+                </div>
+                <div class="social">
+                    <a class="facebook" href="https://www.facebook.com/people/Hogar-Geriatrico-Nuevo-Amanecer/100064125751330/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="instagram" target="_blank" href="https://www.instagram.com/geriatrico_nuevoamanecer/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+573103364562&text=Hola, Quisiera más información!"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="carousel" id="play">
+                <div id="imagen"></div>
+                <div class="controles">
+                    <button id="retroceder"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="avanzar"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="titulo">
+            Portafolio de Servicios
+        </div>
+        <section class="section" id="servicios">
+            <div class="articles">
+                <article class="article">
+                    <h2>Alimentacion <i class="fa-solid fa-bowl-food"></i></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus consectetur molestiae doloribus enim aliquam distinctio laudantium officia! Excepturi, temporibus consequuntur id, consectetur earum commodi quaerat distinctio veniam dignissimos fugit culpa. <br><center><img class="serv-img" width="300px" src="media/images/alimentacion.png" alt=""></center> </p>
+                </article>
+                <article class="article">
+                    <h2>Enfermeria<i class="fa-solid fa-user-nurse"></i></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus consectetur molestiae doloribus enim aliquam distinctio laudantium officia! Excepturi, temporibus consequuntur id, consectetur earum commodi quaerat distinctio veniam dignissimos fugit culpa. <br><center><img class="serv-img" width="150px" src="media/images/enfermeria.png" alt=""></center> </p>
+                </article>
+                <article class="article">
+                    <h2>Aseo general y lavanderia <i class="fa-solid fa-bath"></i></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus consectetur molestiae doloribus enim aliquam distinctio laudantium officia! Excepturi, temporibus consequuntur id, consectetur earum commodi quaerat distinctio veniam dignissimos fugit culpa. <br><center><img class="serv-img" width="300px" src="media/images/aseo_paciente.png" alt=""></center> </p>
+                </article>
+                <article class="article">
+                    <h2>Terapias y actividades recreativas <i class="fa-solid fa-heart"></i></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus consectetur molestiae doloribus enim aliquam distinctio laudantium officia! Excepturi, temporibus consequuntur id, consectetur earum commodi quaerat distinctio veniam dignissimos fugit culpa. <br><center><img class="serv-img" width="200px" src="media/images/terapias.png" alt=""></center> </p>
+                </article>
+                <!--Servicios adicionales-->
+                <span class="hide" id="hideText">
+                    <article class="article">
+                        <h2>Acompañamiento de enfermeria <i class="fa-solid fa-hand-holding-medical"></i></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus consectetur molestiae doloribus enim aliquam distinctio laudantium officia! Excepturi, temporibus consequuntur id, consectetur earum commodi quaerat distinctio veniam dignissimos fugit culpa. <br><center><img class="serv-img" width="200px" src="media/images/help.png" alt=""></center> </p>
+                    </article>
+                    <article class="article">
+                        <h2>Medico domiciliario <i class="fa-solid fa-user-doctor"></i></i></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus consectetur molestiae doloribus enim aliquam distinctio laudantium officia! Excepturi, temporibus consequuntur id, consectetur earum commodi quaerat distinctio veniam dignissimos fugit culpa. <br><center><img class="serv-img" width="200px" src="media/images/doctor.png" alt=""></center> </p>
+                    </article>
+                    <article class="article">
+                        <h2>Ambulancia <i class="fa-solid fa-truck-medical"></i></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus consectetur molestiae doloribus enim aliquam distinctio laudantium officia! Excepturi, temporibus consequuntur id, consectetur earum commodi quaerat distinctio veniam dignissimos fugit culpa. <br><center><img class="serv-img" width="200px" src="media/images/ambulance.jpg" alt=""></center> </p>
+                    </article>
+                </span>
+                <article class="article">
+                    <h3>Servicios adicionales <i class="fa-solid fa-plus"></i></h3>
+                    <p>Contamos con servicios adicionales a un comodo precio en caso de que lo requieras.</p>
+                    <center><button class="btn_show" id="hideText_btn"><i class="fa-solid fa-chevron-down"></i></button></center>
+                </article>
+            </div>            
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="titulo">
+                Contacto
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quisquam similique atque, perspiciatis molestias architecto id minus minima officia autem facilis aut assumenda ad molestiae, repellat labore cupiditate eveniet delectus.</p>
+            <div class="sedes-img">
+                        <li><img src="media/images/g1.png" alt=""></a></li>
+                        <li><img src="media/images/g2.png" alt=""></a></li>
+                        <li><img src="media/images/g3.png" alt=""></a></li>
+                        <li><img src="media/images/g4.png" alt=""></a></li>
+                        <li><img src="media/images/g5.png" alt=""></a></li>
+                        <li><img src="media/images/g6.png" alt=""></a></li>
+                        <li><img src="media/images/g8.png" alt=""></a></li>
+                        <li><img src="media/images/g9.png" alt=""></a></li>
+            </div>
+            <div class="ubicacion">
+                <article class="article">
+                    <h2 class="titulo">Ubicación Sede 1 <i class="fa-solid fa-map-location-dot"></i></h2>
+                    <br>
+                    <center><iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.825740383396!2d-75.22191338573704!3d4.443510645072423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38c545edd33fb1%3A0xc9997bc65067c654!2sHogar%20Geriatrico%20Ibagu%C3%A9%20-%20Nuevo%20Amanecer!5e0!3m2!1ses!2sco!4v1676826612596!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+                </article>
+                <article class="article">
+                    <h2 class="titulo">Ubicación Sede 2 <i class="fa-solid fa-map-location-dot"></i></h2>
+                    <br>
+                    <center><iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15911.501957817942!2d-75.1988899!3d4.4342799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x799aeb3312ca76e0!2sHogar%20geriatrico%20nuevo%20amanecer%20de%20Ibague-%20Sede%202!5e0!3m2!1ses!2sco!4v1676830790522!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+                </article>
+            </div>
+        </section>
+        <div class="go-top-container">
+            <button class="go-top-button">
+                <i class="fa-solid fa-circle-chevron-up"></i>
+            </button>
+        </div>
+        <footer class="footer">
+            <div class="pie">
+                <img class="logo-footer" src="media/images/logo.jpeg" width="300px" alt="">
+                <br>
+                <p class="footer-txt">© 2023 Hogar Geriatrico Nuevo Amanecer  ||  alejandrolabrador42@gmail.com</p>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+</html>
